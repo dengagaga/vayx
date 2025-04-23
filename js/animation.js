@@ -6,7 +6,7 @@ const animation = lottie.loadAnimation({
     path: './js/data.json',
     
   });
-s
+
   function start() {
     animation.play();
     
