@@ -1589,7 +1589,9 @@ b {
 #lottie-animation svg {
    
 }
- 
+.colorEdit {
+    fill: #0050FF;
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);

@@ -6,15 +6,24 @@ const animation = lottie.loadAnimation({
     path: './js/data.json',
     
   });
-
+ 
   function start() {
     animation.play();
     
   }
+
   function stop() {
     animation.stop(); 
     
   }
+  setTimeout(() => {
+    start();
+  }, 1000); 
+  setTimeout(() => {
+    stop()
+  }, 2000); 
+ 
+  const animationContainer = document.getElementById('lottie-animation');
 
-  document.getElementById('lottie-animation').addEventListener('mouseover', start);
-  document.getElementById('lottie-animation').addEventListener('mouseout', stop);
+animationContainer.addEventListener('mouseover', start);
+// animationContainer.addEventListener('mouseout', stop);
