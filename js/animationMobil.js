@@ -1,5 +1,5 @@
-const animation = lottie.loadAnimation({
-    container: document.getElementById('lottie-animation'), // контейнер для анимации
+const animationMobil = lottie.loadAnimation({
+    container: document.getElementById('lottie-animation-mobil'), // контейнер для анимации
     renderer: 'svg', // тип рендерера (может быть 'svg', 'canvas' или 'html')
     loop: false, // зацикливание анимации
     autoplay: false, // автоматический запуск анимации
@@ -8,22 +8,22 @@ const animation = lottie.loadAnimation({
   });
  
   function start() {
-    animation.play();
+    animationMobil.play();
     
   }
 
   function stop() {
-    animation.stop(); 
+    animationMobil.stop(); 
     
   }
-  // setTimeout(() => {
-  //   start();
-  // }, 1000); 
+  setTimeout(() => {
+    start();
+  }, 1000); 
   setTimeout(() => {
     stop()
-  }, 1000); 
+  }, 2000); 
  
-  const animationContainer = document.getElementById('lottie-animation');
+  // const animationContainerMobil = document.getElementById('lottie-animation-mobil');
 
-animationContainer.addEventListener('mouseover', start);
+// animationContainerMobil.addEventListener('mouseover', start);
 // animationContainer.addEventListener('mouseout', stop);
